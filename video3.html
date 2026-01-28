@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Video</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+}
+
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.btn {
+  position: fixed;
+  bottom: 40px;
+  width: 64px;
+  opacity: 0.85;
+}
+
+.back {
+  left: 40px;
+}
+
+.home {
+  right: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<video src="videos/v3.mp4"
+                autoplay
+                onended="location.href='intro.html'">
+</video> 
+
+<img src="assets/back.png" class="btn back"
+     onclick="location.href='menu.html'">
+
+<img src="assets/home.png" class="btn home"
+     onclick="location.href='intro.html'">
+
+</body>
+</html>
